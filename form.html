@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Matin">
+  <meta name="keywords" content="HTML">
+  <meta name="description" content="Test Form">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>FORM</title>
+</head>
+<body>
+  <main class="">
+    <div class="main_wrapper">
+      <div class="container">
+        <div class="content">
+          <p class="text">فرم زیر را تکمیل نمایید .</p>
+          <form class="form" action="#">
+            <input class="input" type="text" name="fname" placeholder="نام">
+            <input class="input" type="text" name="lname" placeholder="نام خانوادگی">
+            <input class="input" type="number" min="1" max="99" name="age" placeholder="سن">
+            <p class="gender">جنسیت :
+              <span>
+                مرد<input type="radio" name="gender" value="Male" checked>
+              </span>
+              <span>
+                زن<input type="radio" name="gender" value="Female">
+              </span>
+              <span>
+                دیگر<input type="radio" name="gender" value="Other">
+              </span>
+            </p>
+            <input class="input" type="tel" pattern="^(\+98|0098|98|0)?9\d{9}$" name="phone" placeholder="شماره تماس">
+            <input class="input" type="password" name="password" placeholder="کلمه عبور">
+            <input class="send" type="submit" value="ارسال">
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
