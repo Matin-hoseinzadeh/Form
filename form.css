@@ -3,17 +3,10 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-@font-face {
-  display: swap;
-  font-weight: bold;
-  font-family: "iran_sans";
-  src: url('IRANSansWeb.woff2') format('woff2');
-}
 body {
   margin: 0;
   padding: 0;
-  direction: rtl;
-  font-family: "iran_sans";
+  direction: ltr;
 }
 .container {
   max-width: 100%;
@@ -38,7 +31,9 @@ body {
 }
 .text {
   margin-top: 0;
-  font-size: 0.9em;
+  font-size: 1em;
+  color: #1535c5;
+  font-weight: bold;
   margin-bottom: 16px;
 }
 .form {
@@ -49,17 +44,17 @@ body {
   justify-content: center;
 }
 .gender {
-  gap: 31px;
+  gap: 12px;
   margin: 0;
   width: 100%;
   display: flex;
   color: #747474;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 3px 10px;
   align-items: center;
   border-radius: 7px;
   justify-content: center;
-  border: 1px solid #26A81A;
+  border: 1px solid #1535c5;
 }
 .gender input {
   width: 11px;
@@ -67,27 +62,36 @@ body {
 }
 .input {
   width: 100%;
-  border: none;
+  outline: none;
+  text-align: left;
   font-size: 0.9em;
-  padding: 3px 10px;
+  padding: 5px 10px;
   border-radius: 7px;
-  font-family: "iran_sans";
-  outline: 1px solid #26A81A;
+  border: 1px solid #1535c5;
+}
+input:valid {
+  border: 1px solid #15c53b;
+}
+input:invalid {
+  border: 1px solid #c51515;
 }
 .send {
   width: 50%;
   color: #fff;
-  padding: 2px 0;
+  padding: 5px 0;
   font-size: 1em;
   cursor: pointer;
   border-radius: 7px;
   transition: 0.3s ease-in;
   font-family: "iran_sans";
-  border: 1px solid #26A81A;
-  background-color: #26A81A;
+  border: 1px solid #1535c5;
+  background-color: #1535c5;
 }
 .send:hover {
   color: #747474;
   background-color: #fff;
-  border: 1px solid #26A81A;
+  border: 1px solid #1535c5;
+}
+.age {
+  text-align: center;
 }
